@@ -23,6 +23,8 @@ let isAlive = setInterval(function(){
     if(obstacleLeft <80 && obstacleLeft >-20 && nezukoTop >=100){
         //collision
 
+        alert("You lose loser");
+
         console.log("collision");
     }
 
