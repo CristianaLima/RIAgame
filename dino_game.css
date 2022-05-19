@@ -1,0 +1,64 @@
+.canvas{
+  width: 800px;
+  height: 200px;
+  margin: auto;
+  border:  1px solid black;
+  padding: 0px;
+
+}
+
+#nezuko{
+  width:100px;
+  height: 100px;
+  background-image: url(img/nezuko_walking.png);
+  background-size: 100px 100px;
+  position: relative;
+  top:100px;
+  left: -20px;
+}
+
+.jump{
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0%{
+    top : 100px;
+  }
+  30%{
+    top: 50px;
+  }
+  50%{
+    top: 10px;
+  }
+
+  80%{
+    top: 50px;
+  }
+  100%{
+    top: 100px;
+  }
+}
+
+#obstacle{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 45px;
+  left: 740px;
+
+  background-image: url("img/snake_monster.png");
+  background-size: 80px;
+
+  animation: block 1s infinite linear;
+}
+
+@keyframes block{
+  0%{
+    left: 740px;
+  }
+  100%{
+    left: -40px;
+  }
+
+}
