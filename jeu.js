@@ -20,7 +20,7 @@ let isAlive = setInterval(function(){
         window.getComputedStyle(obstacle).getPropertyValue("left"));
       
     //detect collision
-    if(obstacleLeft <80 && obstacleLeft >-20 && nezukoTop >=100){
+    if(obstacleLeft <15 && obstacleLeft >-20 && nezukoTop >=100){
         //collision
 
         alert("You lose loser");
