@@ -1,6 +1,6 @@
 
 .game_title{
-  font-family: 'Amarillreg', sans-serif;
+  font-family: 'Fundead BB', sans-serif;
   font-size: 50px;
   color: #03491d;
 }
@@ -56,16 +56,36 @@
     border-style: dashed;
   }
 
+  /*--------- Character front page ----------*/
+  .container_perso {
+    background-color: #03491d;
+    border-radius: 5px;
+    height: 170px;
+    width: 600px;
+    padding: 20px;
+  }
+
+  .nezuko_perso{
+    background-image: url('img/nezuko_walking.png');
+    background-size: 150px 150px;
+  }
+
   /*----------- Location ----------------*/
 
   .status{
     font-size: 15px;
-    font-family: 'Amarillreg', sans-serif;
+    font-family: 'Fundead BB', sans-serif;
     color : black;
   }
 
+  .score{
+    font-size: 25px;
+    font-family: 'Fundead BB', sans-serif;
+    color:#03491d
+  }
+
   .location_div{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
 .find-state {
@@ -78,8 +98,8 @@
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Amarillreg', sans-serif;
-  font-size: 15px;
+  font-family: 'Fundead BB', sans-serif;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: .8px;
   line-height: 20px;
@@ -91,7 +111,6 @@
   transform: translateZ(0);
   transition: filter .2s;
   user-select: none;
-  -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   width: 120px;
@@ -138,13 +157,16 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+.fname_label{
+  font-family: 'Fundead BB';
+  font-size: 15px;
+}
 
 .container {
   border-radius: 5px;
   background-color: #f9e79f;
   padding: 20px;
 }
-
 
 /*---------------GAME ITEMS -----------------------*/
 
