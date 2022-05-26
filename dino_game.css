@@ -1,9 +1,111 @@
+.button1 {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid #7B241C;
+  height: 60px;
+  width: 120px;  
+  font-size: 16px;
+  padding: 16px 30px;
+  margin-bottom:20px ;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.button1:hover {
+  background-color: #7B241C;
+  color: white;
+}
+
+.button2 {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid #7B241C;
+  height: 60px;
+  width: 120px;  
+  font-size: 16px;
+  padding: 16px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.button2:hover {
+  background-color: #7B241C;
+  color: white;
+}
+
+.empty{
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border : 3px solid black;
+  background-color:wheat;
+}
+
+.fill{
+  background-image: url('img/nezuko_walking.png');
+  background-size: 150px 150px;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top:5px;
+  left:5px;
+  cursor: pointer;
+}
+
+  #icon1{
+  background-image: url('img/nezuko_walking.png');
+  background-size: 150px 150px;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top:5px;
+  left:5px;
+  cursor: pointer;
+  }
+
+  #icon2{
+    background-image: url('img/zenitsu.png');
+    background-size: 150px 150px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top:5px;
+    left:5px;
+    cursor: pointer;
+    }
+
+    #icon3{
+      background-size: 150px 150px;
+      position: relative;
+      height: 150px;
+      width: 150px;
+      top:5px;
+      left:5px;
+      cursor: pointer;
+      }
+
+  .hold{
+    border: solid #ccc 4px;
+  }
+
+  .hovered{
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+
+/*---------------GAME ITEMS-----------------------*/
+
 .canvas{
-  width: 700px;
-  height: 200px;
+  width: 800px;
+  height: 300px;
   margin: auto;
   background-image: url(img/japanese_background.jpg);
-  background-size: 700px 200px;
+  background-size: 800px 300px;
   border:  1px solid black;
   padding: 0px;
 
@@ -15,7 +117,7 @@
   background-image: url(img/Chihiro.gif);
   background-size: 100px 100px;
   position: relative;
-  top:100px;
+  top:200px;
   left: 45px;
 }
 
@@ -46,12 +148,10 @@
   width: 40px;
   height: 40px;
   position: relative;
-  top: 35px;
+  top: 135px;
   left: 740px;
-
   background-image: url("img/no_face_simple.gif");
   background-size: 60px;
-
   animation: block 4s infinite linear;
 }
 
