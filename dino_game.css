@@ -118,13 +118,13 @@
   cursor: auto;
 }
 
-/*---------------GAME ITEMS-----------------------*/
+/*---------------GAME ITEMS -----------------------*/
 
 .canvas{
   width: 800px;
   height: 300px;
   margin: auto;
-  background-image: url(img/japanese_background.jpg);
+  background-image: url(img/japanese_temple.gif);
   background-size: 800px 300px;
   border:  1px solid black;
   padding: 0px;
