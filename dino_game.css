@@ -1,4 +1,9 @@
 
+.game_title{
+  font-family: 'Amarillreg', sans-serif;
+  font-size: 50px;
+  color: #03491d;
+}
 /*----------- Drag n Drop----------------*/
 .empty{
   display: inline-block;
@@ -54,13 +59,18 @@
   /*----------- Location ----------------*/
 
   .status{
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Amarillreg', sans-serif;
     color : black;
+  }
+
+  .location_div{
+    margin-bottom: 10px;
   }
 
 .find-state {
   appearance: button;
-  background-color: #393ce3;
+  background-color: #acdbf1;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -68,13 +78,11 @@
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: din-round,sans-serif;
+  font-family: 'Amarillreg', sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: .8px;
   line-height: 20px;
-  margin: 0;
-  outline: none;
   overflow: visible;
   padding: 13px 16px;
   text-align: center;
@@ -91,7 +99,7 @@
 
 .find-state:after {
   background-clip: padding-box;
-  background-color: #5e076b;
+  background-color: #03491d;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -118,6 +126,26 @@
   cursor: auto;
 }
 
+/*------------- NAME FORM -------------------*/
+
+input[type=text], select, textarea {
+  width: 150px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f9e79f;
+  padding: 20px;
+}
+
+
 /*---------------GAME ITEMS -----------------------*/
 
 .canvas{
@@ -126,7 +154,6 @@
   margin: auto;
   background-image: url(img/japanese_temple.gif);
   background-size: 800px 300px;
-  border:  1px solid black;
   padding: 0px;
 
 }

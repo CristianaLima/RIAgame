@@ -14,7 +14,9 @@ const findMyState = () =>{
         .then(res => res.json())
         .then(data =>{
             console.log(data)
-            status.textContent = "You're in " + data.city
+            console.log(latitude)
+            console.log(longitude)
+            status.textContent = "You're in " + data.locality
         })
     };
 

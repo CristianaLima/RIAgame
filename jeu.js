@@ -1,5 +1,6 @@
 const nezuko = document.getElementById("nezuko");
 const obstacle = document.getElementById("obstacle");
+const score = document.querySelector('.score');
 
 function jump (){
     if(nezuko.classList != "jump"){
@@ -32,6 +33,12 @@ let isAlive = setInterval(function(){
 
 },10)
 
+var keyPressCount = 0;
 document.addEventListener("keydown",function (event){
     jump();
-})
+    keyPressCount++;
+    console.log(keyPressCount);
+    score.textContent = "Score : " + keyPressCount;
+});
+
+
