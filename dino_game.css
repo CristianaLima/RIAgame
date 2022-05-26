@@ -138,7 +138,7 @@
   background-size: 100px 100px;
   position: relative;
   top:200px;
-  left: 45px;
+  left: -30px;
 }
 
 .jump{
@@ -169,15 +169,15 @@
   height: 40px;
   position: relative;
   top: 135px;
-  left: 740px;
+  left: 750px;
   background-image: url("img/no_face_simple.gif");
   background-size: 60px;
-  animation: block 4s infinite linear;
+  animation: block 2s infinite linear;
 }
 
 @keyframes block{
   0%{
-    left: 740px;
+    left: 750px;
   }
   100%{
     left: -40px;
