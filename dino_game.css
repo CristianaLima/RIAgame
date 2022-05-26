@@ -1,42 +1,5 @@
-.button1 {
-  background-color: whitesmoke; 
-  color: black; 
-  border: 2px solid #7B241C;
-  height: 60px;
-  width: 120px;  
-  font-size: 16px;
-  padding: 16px 30px;
-  margin-bottom:20px ;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
 
-}
-
-.button1:hover {
-  background-color: #7B241C;
-  color: white;
-}
-
-.button2 {
-  background-color: whitesmoke; 
-  color: black; 
-  border: 2px solid #7B241C;
-  height: 60px;
-  width: 120px;  
-  font-size: 16px;
-  padding: 16px 30px;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-
-}
-
-.button2:hover {
-  background-color: #7B241C;
-  color: white;
-}
-
+/*----------- Drag n Drop----------------*/
 .empty{
   display: inline-block;
   height: 160px;
@@ -46,7 +9,7 @@
   background-color:wheat;
 }
 
-.fill{
+.fills{
   background-image: url('img/nezuko_walking.png');
   background-size: 150px 150px;
   position: relative;
@@ -79,16 +42,6 @@
     cursor: pointer;
     }
 
-    #icon3{
-      background-size: 150px 150px;
-      position: relative;
-      height: 150px;
-      width: 150px;
-      top:5px;
-      left:5px;
-      cursor: pointer;
-      }
-
   .hold{
     border: solid #ccc 4px;
   }
@@ -97,6 +50,73 @@
     background: #f4f4f4;
     border-style: dashed;
   }
+
+  /*----------- Location ----------------*/
+
+  .status{
+    font-size: 20px;
+    color : black;
+  }
+
+.find-state {
+  appearance: button;
+  background-color: #393ce3;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.find-state:after {
+  background-clip: padding-box;
+  background-color: #5e076b;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.find-state:main,
+.find-state:focus {
+  user-select: auto;
+}
+
+.find-state:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.find-state:disabled {
+  cursor: auto;
+}
 
 /*---------------GAME ITEMS-----------------------*/
 

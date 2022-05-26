@@ -1,6 +1,6 @@
 /*querySelectorAll -------> sinon ça marche pas pour le deuxième perso*/
 const fill = document.querySelector('.fill');
-const empties = document.querySelector('.empty');
+const empties = document.querySelectorAll('.empty');
 
 
 fill.addEventListener('dragstart', dragStart);
@@ -24,6 +24,21 @@ function dragEnd(){
     this.className='fill';
 }
 
-function dragOver(){
-    
+function dragOver(e){
+    e.preventDefault();
+   
+}
+
+function dragEnter(e){
+   e.preventDefault();
+   this.className += ' hovered';
+}
+
+function dragLeave(){
+    this.className= 'empty';
+}
+
+function dragDrop(){
+    this.className='empty';
+    this.append(fill)
 }
