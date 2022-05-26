@@ -14,18 +14,18 @@ function jump (){
 let isAlive = setInterval(function(){
    //get current nezuko Y position
     let nezukoTop = parseInt(window.getComputedStyle(nezuko).getPropertyValue("top"));
-    
+   
     //get current obstacle X position
     let obstacleLeft = parseInt(
         window.getComputedStyle(obstacle).getPropertyValue("left"));
-      
+        
     //detect collision
-    if(obstacleLeft <45 && obstacleLeft >-40 && nezukoTop >=100){
+    if(obstacleLeft <25 && obstacleLeft >-30 && nezukoTop >=200){
         //collision
 
         obstacle.style.animation="none";
 
-        alert("You lose loser");
+         alert("You lose loser");
 
         console.log("collision");
     }
