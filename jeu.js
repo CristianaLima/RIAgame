@@ -1,5 +1,5 @@
 const nezuko = document.getElementById("nezuko");
-const obstacle = document.getElementById("obstacle")
+const obstacle = document.getElementById("obstacle");
 
 function jump (){
     if(nezuko.classList != "jump"){
@@ -20,8 +20,10 @@ let isAlive = setInterval(function(){
         window.getComputedStyle(obstacle).getPropertyValue("left"));
       
     //detect collision
-    if(obstacleLeft <15 && obstacleLeft >-20 && nezukoTop >=100){
+    if(obstacleLeft <45 && obstacleLeft >-40 && nezukoTop >=100){
         //collision
+
+        obstacle.style.animation="none";
 
         alert("You lose loser");
 
