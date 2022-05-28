@@ -24,4 +24,9 @@ function play(){
   }
   
   localStorage.setItem('Personnage', JSON.stringify(id));
+
+  var name = document.getElementById('fname').value;
+  
+  localStorage.setItem('CurrentName', JSON.stringify(name));
+
 }
