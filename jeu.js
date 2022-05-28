@@ -26,7 +26,7 @@ let isAlive = setInterval(function(){
 
         obstacle.style.animation="none";
 
-         alert("You lose loser");
+         window.location.href="http://127.0.0.1:5500/img/alert_box.html";
 
         console.log("collision");
     }

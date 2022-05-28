@@ -1,11 +1,14 @@
 
 .game_title{
+  padding-top: 50px;
   font-family: 'Fundead BB', sans-serif;
   font-size: 50px;
   color: #03491d;
 }
 
 .game_instruction{
+  padding-top: 20px;
+  padding-bottom: 30px;
   font-family: 'Fundead BB', sans-serif;
   font-size: 25px;
   color: #03491d;
@@ -70,6 +73,10 @@
   vertical-align: middle;
   white-space: nowrap;
   width: 130px;
+}
+ 
+.find-state, .btns{
+  font-family: 'DePixel' sans-serif;
 }
 
 .find-state:after {
@@ -241,3 +248,89 @@ footer {
   text-align: right;
   font-family: 'DePixel', sans-serif;
 }
+
+/*------------ ALERT BOX ---------------*/
+
+@import url('http://fonts.cdnfonts.com/css/depixel');
+
+.body_alert {
+  background-image: url('/img/cemetery.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  font-family:'DePixel', sans-serif;
+  background-color: #dedede;
+}
+
+
+.click, .popup_box{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+}
+
+.click{
+  background-color: #03491d;
+  color:white;
+  font-family: 'DePixel', sans-serif;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 16px;
+  border: 2px solid #acdbf1;
+  
+}
+
+.popup_box{
+  user-select: none;
+  width: 300px;
+  height: 250px;
+  background: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 5px 10px #03491d;
+  /* z-index: 9999; */
+
+}
+
+.dead{
+  background-size: 50px 50px;
+}
+
+.popup_box h1{
+  font-size: 20px;
+  color: #1b2631;
+  margin-bottom: 5px;
+
+}
+
+.popup_box label{
+  font-size: 23px;
+  color: #404040;
+  
+}
+
+.popup_box .btns{
+  margin: 40px 0 0 0;
+}
+
+.btns .btn1, .btns .btn2{
+background-color: #03491d;
+color:white;
+font-size: 18px;
+padding: 10px 13px;
+border: 2px solid #9999 ;
+border-radius: 5px;
+}
+
+
