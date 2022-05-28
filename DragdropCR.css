@@ -1,10 +1,19 @@
+
+#div0{
+  display: flex;
+  justify-content: center;
+}
+
 #div1, #div2, #div3 {
-    float: left;
     width: 80px;
     height: 90px;
     margin: 10px;
     padding: 10px;
-    border: 3px solid #03491d;;
+    border: 3px solid #03491d;
+  }
+
+  #div3{
+    border: 5px solid #d6b50b;
   }
 
   .dragdrop_title{
