@@ -1,6 +1,7 @@
 const nezuko = document.getElementById("nezuko");
 const obstacle = document.getElementById("obstacle");
 const score = document.querySelector('.score');
+const imgHero = JSON.parse(localStorage.getItem('Personnage'));
 var vid = document.getElementById("game_sound");
 vid.volume = 2;
 
@@ -14,6 +15,14 @@ function jump (){
     }
 }
 
+(function display_image(){
+    var a = document.createElement("img");
+    a.src = imgHero;
+    a.width = 100;
+    a.height = 100;
+    nezuko.appendChild(a);
+})();
+
 let isAlive = setInterval(function(){
    //get current nezuko Y position
     let nezukoTop = parseInt(window.getComputedStyle(nezuko).getPropertyValue("top"));
@@ -23,7 +32,7 @@ let isAlive = setInterval(function(){
         window.getComputedStyle(obstacle).getPropertyValue("left"));
         
     //detect collision
-    if(obstacleLeft <25 && obstacleLeft >-30 && nezukoTop >=200){
+    if(obstacleLeft <25 && obstacleLeft >-20 && nezukoTop >=170){
         //collision
 
         obstacle.style.animation="none";
