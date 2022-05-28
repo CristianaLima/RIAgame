@@ -51,6 +51,7 @@ let isAlive = setInterval(function(){
         else{
             score.table.push({"Name" : currentname, "TableScore" : keyPressCount, "Time" : h+":"+mn+":"+s+":"+ms});
         }
+        reset();
         console.log(score);
         localStorage.setItem('TableScore', JSON.stringify(score));
 
