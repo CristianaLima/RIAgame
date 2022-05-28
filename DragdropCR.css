@@ -18,6 +18,8 @@
 
   .dragdrop_title{
     font-family: 'DePixel', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 15px;
     color: #03491d;
   }

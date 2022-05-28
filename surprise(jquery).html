@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <link rel="stylesheet" href="/game.css">
+
+    <link href="'http://fonts.cdnfonts.com/css/fundead-bb'" rel="stylesheet">
+    <link href="'http://fonts.cdnfonts.com/css/depixel'" rel="stylesheet">
+        
+
+<style>
+ @import url('http://fonts.cdnfonts.com/css/fundead-bb');
+ @import url('http://fonts.cdnfonts.com/css/depixel');
+</style>
+                
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide();
+  });
+  $("#show").click(function(){
+    $("img").show();
+  });
+});
+</script>
+</head>
+<body>
+
+
+<center>
+<h1 class="game_title">Click on me if you dare...</h1>
+
+<div>
+<button class="find-state" id="hide">Hide</button>
+<button class="find-state" id="show">Show</button>
+</div>
+
+<img src="/img/bear.png" height="500" width="800">
+</center>
+
+</body>
+</html>

@@ -1,6 +1,8 @@
 const nezuko = document.getElementById("nezuko");
 const obstacle = document.getElementById("obstacle");
 const score = document.querySelector('.score');
+var vid = document.getElementById("game_sound");
+vid.volume = 2;
 
 function jump (){
     if(nezuko.classList != "jump"){
@@ -26,7 +28,7 @@ let isAlive = setInterval(function(){
 
         obstacle.style.animation="none";
 
-         window.location.href="http://127.0.0.1:5500/img/alert_box.html";
+         window.location.href="http://127.0.0.1:5500/alert_box.html";
 
         console.log("collision");
     }

@@ -1,6 +1,7 @@
 
 .game_title{
   padding-top: 50px;
+  padding-bottom: 30px;
   font-family: 'Fundead BB', sans-serif;
   font-size: 50px;
   color: #03491d;
@@ -121,10 +122,13 @@ input[type=text], select, textarea {
 }
 
 
-.fname_label{
-  font-family: 'Fundead BB';
+#fname{
   font-size: 15px;
+  width:auto;
+  font-family: 'DePixel', sans-serif;
+  margin-top: 20px;
 }
+
 
 .container {
   border-radius: 5px;
@@ -332,5 +336,32 @@ padding: 10px 13px;
 border: 2px solid #9999 ;
 border-radius: 5px;
 }
+
+/*------------DRAG N DROP -------------*/
+
+#div0{
+  display: flex;
+  justify-content: center;
+}
+
+#div1, #div2, #div3 {
+    width: 80px;
+    height: 90px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #03491d;
+  }
+
+  #div3{
+    border: 5px solid #d6b50b;
+  }
+
+ .h3, .dragdrop_title{
+    font-family: 'DePixel', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: #d6b50b;
+  }
 
 
