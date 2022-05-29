@@ -201,7 +201,15 @@ input[type=text], select, textarea {
 
 }
 
-/*------------ HALL OF FAME ---------------*/
+.time{
+  font-size: 20px;
+  font-family: 'Fundead BB', sans-serif;
+  color: #03491d;
+}
+
+
+
+  /*------------ HALL OF FAME ---------------*/
 
 .score_title{
   font-family: 'DePixel', sans-serif;
