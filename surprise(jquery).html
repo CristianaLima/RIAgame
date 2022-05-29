@@ -8,6 +8,8 @@
 
     <link href="'http://fonts.cdnfonts.com/css/fundead-bb'" rel="stylesheet">
     <link href="'http://fonts.cdnfonts.com/css/depixel'" rel="stylesheet">
+
+    <body background="/img/front_page.jpg">
         
 
 <style>
@@ -26,9 +28,13 @@ $(document).ready(function(){
   });
 });
 
+</script>
+
+<script>
+
 $(document).ready(function(){
-    $("button").click(function(){
-      $("#p1").css("color", "green")
+    $("#clickme").click(function(){
+      $("#p1").css("color", "#8B4513")
         .slideUp(2000)
         .slideDown(2000);
     });
@@ -44,17 +50,17 @@ $(document).ready(function(){
 <h1 class="game_title">hi my friend...</h1>
 
 <div>
-<button class="find-state" id="hide">Hide</button>
 <button class="find-state" id="show">Show</button>
+<button class="find-state" id="hide">Hide</button>
 </div>
 
-<img src="/img/bear.png" height="500" width="800">
+<img src="/img/bear.png" height="400" width="600" hidden="true">
 </center>
 
 <center>
 <p id="p1">Cristiana is the best</p>
 
-<button class="find-state">Click me</button>
+<button class="find-state" id="clickme">Click me</button>
 </center>
 
 </body>
