@@ -27,46 +27,33 @@ let show = false;
         }
     }
 
-    for(var i=1; i<4; i++){
-        var newLine = BodyTable.insertRow(i-1);
+    showScore(0,3);
+})();
+
+function showScore(begins, nb){
+    for(var i=begins; i<nb; i++){
+        var newLine = BodyTable.insertRow(i);
         var newColumn0 = newLine.insertCell(0);
         var newColumn1 = newLine.insertCell(1);
         var newColumn2 = newLine.insertCell(2);
         var newColumn3 = newLine.insertCell(3);
         
-        var position = document.createTextNode(i);
+        var position = document.createTextNode(i+1);
 
-        var name = document.createTextNode(TableScore.table[i-1].Name);
-        var jump = document.createTextNode(TableScore.table[i-1].TableScore);
-        var time = document.createTextNode(TableScore.table[i-1].Time);
+        var name = document.createTextNode(TableScore.table[i].Name);
+        var jump = document.createTextNode(TableScore.table[i].TableScore);
+        var time = document.createTextNode(TableScore.table[i].Time);
 
         newColumn0.appendChild(position);
         newColumn1.appendChild(name);
         newColumn2.appendChild(jump);
         newColumn3.appendChild(time); 
     }
-})();
+}
 
 function showAll(){
     if(!show){
-        for(var i=3; i<TableScore.table.length; i++){
-            var newLine = BodyTable.insertRow(i);
-            var newColumn0 = newLine.insertCell(0);
-            var newColumn1 = newLine.insertCell(1);
-            var newColumn2 = newLine.insertCell(2);
-            var newColumn3 = newLine.insertCell(3);
-            
-            var position = document.createTextNode(i+1);
-
-            var name = document.createTextNode(TableScore.table[i].Name);
-            var jump = document.createTextNode(TableScore.table[i].TableScore);
-            var time = document.createTextNode(TableScore.table[i].Time);
-
-            newColumn0.appendChild(position);
-            newColumn1.appendChild(name);
-            newColumn2.appendChild(jump);
-            newColumn3.appendChild(time); 
-        }
+        showScore(3,TableScore.table.length)
         show=true;
     }
 }
