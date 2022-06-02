@@ -142,7 +142,7 @@ input[type=text], select, textarea {
   width: 800px;
   height: 300px;
   margin: auto;
-  background-image: url(img/japanese_temple.gif);
+  background-image: url(/img/japanese_temple.gif);
   background-size: 800px 300px;
   padding: 0px;
 
@@ -186,7 +186,7 @@ input[type=text], select, textarea {
   position: relative;
   top: 130px;
   left: 750px;
-  background-image: url("img/no_face_simple.gif");
+  background-image: url("/img/no_face_simple.gif");
   background-size: 60px;
   animation: block 2s infinite linear;
 }
