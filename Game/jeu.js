@@ -57,7 +57,7 @@ let isAlive = setInterval(function(){
         console.log(score);
         localStorage.setItem('TableScore', JSON.stringify(score));
 
-        window.location.href="http://127.0.0.1:5500/alert_box.html";
+        window.location.href="http://127.0.0.1:5500/Game/alert_box.html";
 
         console.log("collision");
     }
