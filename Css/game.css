@@ -373,8 +373,9 @@ border-radius: 5px;
     font-family: 'DePixel', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 35px;
-    color: #d6b50b;
+    font-weight: bold;
+    font-size: 20px;
+    color: #03491d;
   }
 
 
